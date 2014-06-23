@@ -1,0 +1,49 @@
+.clear-day:before {
+  content:"\f00d";
+}
+.clear-night:before {
+  content:"\f078";
+}
+.rain:before {
+  content:"\f008";
+}
+.snow:before {
+  content:"\f00a";
+}
+/*.snow{
+  background-color:red;
+} still picks up the wi-snow:before rule*/
+
+.sleet:before {
+  content:"\f068";
+}
+.wind:before {
+  content:"\f001";
+}
+.fog:before {
+  content:"\f014"
+}
+.cloudy:before{
+  content:"\f013"
+}
+.hail:before{
+  content:"\f015"
+}
+.thunderstorm:before{
+  content:"\f01e"
+}
+.tornado:before{
+  content:"\f056"
+}
+.partly-cloudy-day:before{
+  content:"\f013"
+}
+.partly-cloudy-night:before{
+  content:"\f083"
+}
+.drizzle:before {
+  content:"\f008"
+}
+/*
+API and icons above match with the weather icon api
+*/

@@ -1,0 +1,61 @@
+<!--Background Image-->
+<!--Navbar-->
+<div class="navbar-inverse">
+  <div class="navbar-inner">
+    	<div class="brand" href="/">
+    	<%= link_to(image_tag("wynf2.png"), root_path) %>
+    	</div>
+   <a class="brand"> 
+    <form class="navbar-search pull-right" role="search">
+	    <div class="form-group">
+	    	<%= form_for(root_path, method: :get) do %>
+	  		<%= text_field_tag :q, params[:q], placeholder: "  City, State, Location" %>
+	  	</div>
+	  		<button type="submit" class="btn btn-default">Search</button>
+	</form>
+	</a>
+  </div>
+</div>
+<!--Navbar-->
+
+<div id="imageContainer">
+<body>
+
+	<div class="container">
+
+	    <div class="row">
+		 	
+		    <div class="col-md-4">
+
+			    <h1><%= @city %></h1>
+			    
+		        	<p id="icon"  class="wi <%= @forecast.currently.icon %>" ></p>
+
+		        <h3> Current Condition : <span><%=@forecast.currently.summary%></span></h3>  
+
+		    <hr>  
+		          
+		        <h3> Current Temperature : <span><%=@forecast.currently.apparentTemperature%>°F</span></h3>
+					
+			<hr>	
+				
+				<h4> Precipitation Probability : <span><%= @forecast.currently.precipProbability*100%></span></h4>      
+		    <hr>
+				
+				<h4> Conditions for the Next Hour : <span><%= @forecast.minutely.try :summary %></span></h4>
+						
+			<hr>				
+					
+				<h4> Daily Summary : <span><%=@forecast.hourly.summary %></span></h4>
+								
+			<hr>			
+				
+				<h4> Weekly Summary : <span><%= @forecast.daily.summary %></span></h4>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</div>
+<% end %>

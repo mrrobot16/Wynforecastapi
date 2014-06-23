@@ -1,0 +1,108 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+ body {
+	background-image: url(<%= image_path 'bg.png' %>);
+	text-align: center;
+	color: black;
+	}
+
+h1 {	
+	font-size: 55px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	}
+
+h2 {
+	font-size:24px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	}
+
+h3 {
+	font-size: 22px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	}
+
+h4 {
+	font-size: 20px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+
+span {
+	font-size: 16px;
+	}
+
+hr { color: black;}
+
+/*for icon size*/
+.wi {
+	font-size: 70px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	color: black;
+	}
+
+.navbar-inverse {
+
+margin-top: 25px;
+
+}
+
+.navbar-inverse .brand {
+
+	padding: 0px 0px 15px;
+	padding-right: 1080px;
+}
+
+.btn {
+
+	line-height: 13px;
+	margin-left: 815px;
+	padding: 5px 5px;
+}
+
+.container {
+
+	margin-top: 30px;
+	margin-bottom: 10px;
+	background-color: white;
+	opacity: .5;
+	border: 1px solid;
+    border-radius: 8px;
+	position: relative;
+	padding: 8px;
+	}
+
+.row {
+
+	margin-left: 0px;
+}
+
+img {
+
+	max-width: 150%;
+}
+
+input#q {
+
+	line-height: 25px;
+	margin-bottom: -26px;
+}
